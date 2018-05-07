@@ -10,7 +10,7 @@ var routes = require('./routes/index');
 app.use(express.static(path.join(__dirname, 'public')));
 //templating engine
 
-app.engine('hbs',hbs({extname:'hbs',defaultLayout:'home',layoutsDir:__dirname+'/views'}));
+app.engine('hbs',hbs({extname:'hbs',defaultLayout:'error',layoutsDir:__dirname+'/views'}));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
